@@ -6,3 +6,14 @@ function choisirPhraseOuMots(){
     }   
     return choix
 }
+// Fonction pour lancer la boucle du jeu
+function lancerBoucleJeu(liste){
+    let score = 0
+    for (let i = 0; i < liste.length; i++){
+        let motUtilisateur = prompt(`Retapez : ${liste[i]}`)
+        if (motUtilisateur === liste[i]) {
+            score++
+        } 
+    }
+    return score
+}
