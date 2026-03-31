@@ -11,7 +11,7 @@ function choisirPhraseOuMots() {
 }
 // Fonction pour lancer la boucle du jeu
 function lancerBoucleJeu(liste){
-    let score = 0
+    let score = 1
     for (let i = 0; i < liste.length; i++){
         let motUtilisateur = prompt(`Retapez : ${liste[i]}`)
         if (motUtilisateur === liste[i]) {
